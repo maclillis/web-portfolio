@@ -1,5 +1,5 @@
-# web-portfolio
-Built in pure HTML5, CSS3 and Javascript with a Mobile first-philosphy. To infinity and beyond.
+# Marcus Liljehammar - web-portfolio
+Built in pure HTML5, CSS3 and Javascript with a Mobile first-philosophy. To infinity and beyond.
 
 ## Disclaimer ##
 Feel free to take anything you want from this repo. I believe in total freedom in sharing of code and creative ideas.
@@ -17,5 +17,5 @@ to show off for any future employers or recruiters.
 * [.onScreen();](https://silvestreh.github.io/onScreen/ ".onScreen();")
 
 ## A special thanks ##
-A very special 'thank you' goes to oh so important [CSSTricks](http://csstricks.com "CSSTricks") for the "Same page"-scrolling snippet. That was part of the reason why 
+A very special 'thank you' goes to oh so important [CSS-Tricks](https://css-tricks.com/ "CSS-Tricks") for the "Same page"-scrolling snippet. That was part of the reason why 
 I did a one page-template in the first place.
