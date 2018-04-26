@@ -1,4 +1,4 @@
-# web-portfolio
+# Marcus Liljehammar - web-portfolio
 Built in pure HTML5, CSS3 and Javascript with a Mobile first-philosophy. To infinity and beyond.
 
 ## Disclaimer ##
