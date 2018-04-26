@@ -171,27 +171,27 @@ $(document).ready(function() {
 		var inScreen = new OnScreen();
 
 		inScreen.on('enter', '.ml-portfolio-thumb', (element, event) => {
-			TweenMax.staggerTo(".ml-portfolio-thumb", 0.60, {opacity:1}, 0.7);
+			TweenMax.staggerTo(".ml-portfolio-thumb", 0.40, {opacity:1}, 0.4);
 		});
 
 		inScreen.on('enter', '.ml-skills-on-screen', (element, event) => {
 			skillsMetersAnimTl
-				.to("#ml-skill-meter-graphics", 0.60, {width:"90%"})
-				.to("#ml-skill-meter-web", 0.60, {width:"80%"})
-				.to("#ml-skill-meter-web", 0.60, {width:"80%"})
-				.to("#ml-skill-meter-cms", 0.60, {width:"50%"})
-				.to("#ml-skill-meter-git", 0.60, {width:"50%"})
-				.to("#ml-skill-meter-ux", 0.60, {width:"50%"})
-				.to("#ml-skill-meter-mtngraphics", 0.60, {width:"50%"});
+				.to("#ml-skill-meter-graphics", 0.40, {width:"90%"})
+				.to("#ml-skill-meter-web", 0.40, {width:"80%"})
+				.to("#ml-skill-meter-web", 0.40, {width:"80%"})
+				.to("#ml-skill-meter-cms", 0.40, {width:"50%"})
+				.to("#ml-skill-meter-git", 0.40, {width:"50%"})
+				.to("#ml-skill-meter-ux", 0.40, {width:"50%"})
+				.to("#ml-skill-meter-mtngraphics", 0.40, {width:"50%"});
 
 		});
 
 		inScreen.on('enter', '.ml-toolbox-icon', (element, event) => {
-			TweenMax.staggerTo(".ml-toolbox-icon", 0.60, {scale:1,ease:Back.easeOut}, 0.7);
+			TweenMax.staggerTo(".ml-toolbox-icon", 0.40, {scale:1,ease:Back.easeOut}, 0.7);
 		});
 
 		inScreen.on('enter', '.ml-social-icon', (element, event) => {
-			TweenMax.staggerTo(".ml-social-icon", 0.60, {scale:1,ease:Back.easeOut}, 0.2);
+			TweenMax.staggerTo(".ml-social-icon", 0.40, {scale:1,ease:Back.easeOut}, 0.2);
 		});
 
 

@@ -259,7 +259,6 @@ ul {
     	position: absolute;
     	top: 22%;
     	left: 23%;
-    	z-index: -1;
     	transform: scale(0);
     	-webkit-transform: scale(0);
     	-moz-transform: scale(0);
@@ -270,7 +269,6 @@ ul {
     	position: absolute;
     	top: 40%;
     	left: 15%;
-    	z-index: -1;
     	transform: scale(0);
     	-webkit-transform: scale(0);
     	-moz-transform: scale(0);
@@ -749,7 +747,6 @@ ul {
     	position: absolute;
     	top: 38%;
     	left: 34%;
-    	z-index: -1;
     	transform: scale(0);
     	-webkit-transform: scale(0);
     	-moz-transform: scale(0);
@@ -760,7 +757,6 @@ ul {
     	position: absolute;
     	top: 54%;
     	left: 32%;
-    	z-index: -1;
     	transform: scale(0);
     	-webkit-transform: scale(0);
     	-moz-transform: scale(0);
@@ -1311,7 +1307,7 @@ ul {
       display: table;
       border-color: #e8e8e8;
       margin: 0 auto;
-      z-index: -2;
+      /* z-index: -2; */
       position: relative;
       transform: scale(0);
       -webkit-transform: scale(0);
@@ -1323,7 +1319,6 @@ ul {
     	position: absolute;
     	top: 125px;
     	left: 390px;
-    	z-index: -1;
     	transform: scale(0);
     	-webkit-transform: scale(0);
     	-moz-transform: scale(0);
@@ -1334,7 +1329,6 @@ ul {
     	position: absolute;
     	top: 178px;
     	left: 368px;
-    	z-index: -1;
     	transform: scale(0);
     	-webkit-transform: scale(0);
     	-moz-transform: scale(0);
@@ -1346,6 +1340,7 @@ ul {
     	position: absolute;
     	top: 204px;
     	left: 188px;
+    	pointer-events: none;
     }
 
     span.ml-typing-txt {
