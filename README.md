@@ -17,5 +17,5 @@ to show off for any future employers or recruiters.
 * [.onScreen();](https://silvestreh.github.io/onScreen/ ".onScreen();")
 
 ## A special thanks ##
-A very special 'thank you' goes to oh so important [link](http://csstricks.com "CSSTricks") for the "Same page"-scrolling snippet. That was part of the reason why 
+A very special 'thank you' goes to oh so important [CSSTricks](http://csstricks.com "CSSTricks") for the "Same page"-scrolling snippet. That was part of the reason why 
 I did a one page-template in the first place.
