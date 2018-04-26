@@ -1,5 +1,5 @@
 # web-portfolio
-Built in pure HTML5, CSS3 and Javascript with a Mobile first-philosphy. To infinity and beyond.
+Built in pure HTML5, CSS3 and Javascript with a Mobile first-philosophy. To infinity and beyond.
 
 ## Disclaimer ##
 Feel free to take anything you want from this repo. I believe in total freedom in sharing of code and creative ideas.
