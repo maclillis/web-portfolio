@@ -53,61 +53,80 @@ $(document).ready(function() {
 		/* OnClick-handlers for the Portfolio-section */
 
 		//Open Portfolio-tabs
-		$("#ml-web-portfolio-thumb-01").click(function(){
-			$("#ml-web-portfolio-01").slideDown("slow");
-			TweenMax.to("#ml-web-portfolio-iframe-01", 0.5, {display:"block", opacity:1, delay:0.5});
-			TweenMax.to("#ml-web-portfolio-thumb-01", 0.5, {opacity:0, display:"none"});
+		$("#ml-web-project-thumb-01").click(function(){
+			$("#ml-web-project-01").slideDown("slow");
+			TweenMax.to("#ml-web-project-iframe-01", 0.5, {display:"block", opacity:1, delay:0.5});
+			TweenMax.to("#ml-web-project-thumb-01", 0.5, {opacity:0, display:"none"});
 			mobileNav.slideUp();
 			closeMobileMenu();
 
-			$(window).scrollTo("#ml-web-portfolio-thumb-01", 1000);
+			$(window).scrollTo("#ml-web-project-thumb-01", 1000);
 		})
 
-		$("#ml-web-portfolio-thumb-02").click(function(){
-			$("#ml-web-portfolio-02").slideDown("slow");
-			TweenMax.to("#ml-web-portfolio-iframe-02", 0.5, {display:"block", opacity:1, delay:0.5});
-			TweenMax.to("#ml-web-portfolio-thumb-02", 0.5, {opacity:0, display:"none"});
+		$("#ml-web-project-thumb-02").click(function(){
+			$("#ml-web-project-02").slideDown("slow");
+			TweenMax.to("#ml-web-project-iframe-02", 0.5, {display:"block", opacity:1, delay:0.5});
+			TweenMax.to("#ml-web-project-thumb-02", 0.5, {opacity:0, display:"none"});
 			mobileNav.slideUp();
 			closeMobileMenu();
 
-			$(window).scrollTo("#ml-web-portfolio-thumb-02", 1000);
+			$(window).scrollTo("#ml-web-project-thumb-02", 1000);
 		})
 
-		$("#ml-web-portfolio-thumb-04").click(function(){
-			$("#ml-web-portfolio-04").slideDown("slow");
-			TweenMax.to("#ml-web-portfolio-iframe-04", 0.5, {display:"inline-block", opacity:1, delay:0.5});
-			TweenMax.to("#ml-web-portfolio-thumb-04", 0.5, {opacity:0, display:"none"});
+		$("#ml-web-project-thumb-03").click(function(){
+			$("#ml-web-project-03").slideDown("slow");
+			TweenMax.to("#ml-web-project-iframe-03", 0.5, {display:"block", opacity:1, delay:0.5});
+			TweenMax.to("#ml-web-project-thumb-03", 0.5, {opacity:0, display:"none"});
 			mobileNav.slideUp();
 			closeMobileMenu();
 
-			$(window).scrollTo("#ml-web-portfolio-thumb-04", 1000);
+			$(window).scrollTo("#ml-web-project-thumb-02", 1000);
+		})
+
+		$("#ml-web-project-thumb-04").click(function(){
+			$("#ml-web-project-04").slideDown("slow");
+			TweenMax.to("#ml-web-project-iframe-04", 0.5, {display:"inline-block", opacity:1, delay:0.5});
+			TweenMax.to("#ml-web-project-thumb-04", 0.5, {opacity:0, display:"none"});
+			mobileNav.slideUp();
+			closeMobileMenu();
+
+			$(window).scrollTo("#ml-web-project-thumb-04", 1000);
 		})
 
 		//Close Portfolio-tabs
-		$("#ml-web-portfolio-collapse-tab-01").click(function(){
-			$("#ml-web-portfolio-01").slideUp("slow");
-			TweenMax.to("#ml-web-portfolio-iframe-01", 0.5, {display:"none", opacity:0});
-			TweenMax.to("#ml-web-portfolio-thumb-01", 0.7, {display:"inline-block", opacity:1});
+		$("#ml-web-project-collapse-tab-01").click(function(){
+			$("#ml-web-project-01").slideUp("slow");
+			TweenMax.to("#ml-web-project-iframe-01", 0.5, {display:"none", opacity:0});
+			TweenMax.to("#ml-web-project-thumb-01", 0.7, {display:"inline-block", opacity:1});
 
-			$(window).scrollTo("#ml-portfolio", 1000);
-
-		})
-
-		$("#ml-web-portfolio-collapse-tab-02").click(function(){
-			$("#ml-web-portfolio-02").slideUp("slow");
-			TweenMax.to("#ml-web-portfolio-iframe-02", 0.5, {display:"none", opacity:0});
-			TweenMax.to("#ml-web-portfolio-thumb-02", 0.7, {display:"inline-block", opacity:1});
-
-			$(window).scrollTo("#ml-web-portfolio-thumb-01", 1000);
+			$(window).scrollTo("#ml-projects", 1000);
 
 		})
 
-		$("#ml-web-portfolio-collapse-tab-04").click(function(){
-			$("#ml-web-portfolio-04").slideUp("slow");
-			TweenMax.to("#ml-web-portfolio-iframe-04", 0.5, {display:"none", opacity:0});
-			TweenMax.to("#ml-web-portfolio-thumb-04", 0.7, {display:"inline-block", opacity:1});
+		$("#ml-web-project-collapse-tab-02").click(function(){
+			$("#ml-web-project-02").slideUp("slow");
+			TweenMax.to("#ml-web-project-iframe-02", 0.5, {display:"none", opacity:0});
+			TweenMax.to("#ml-web-project-thumb-02", 0.7, {display:"inline-block", opacity:1});
 
-			$(window).scrollTo("#ml-web-portfolio-thumb-02", 1000);
+			$(window).scrollTo("#ml-web-project-thumb-01", 1000);
+
+		})
+
+		$("#ml-web-project-collapse-tab-03").click(function(){
+			$("#ml-web-project-03").slideUp("slow");
+			TweenMax.to("#ml-web-project-iframe-03", 0.5, {display:"none", opacity:0});
+			TweenMax.to("#ml-web-project-thumb-03", 0.7, {display:"inline-block", opacity:1});
+
+			$(window).scrollTo("#ml-web-project-thumb-01", 1000);
+
+		})
+
+		$("#ml-web-project-collapse-tab-04").click(function(){
+			$("#ml-web-project-04").slideUp("slow");
+			TweenMax.to("#ml-web-project-iframe-04", 0.5, {display:"none", opacity:0});
+			TweenMax.to("#ml-web-project-thumb-04", 0.7, {display:"inline-block", opacity:1});
+
+			$(window).scrollTo("#ml-web-project-thumb-02", 1000);
 
 		})
 
@@ -170,8 +189,8 @@ $(document).ready(function() {
 		/* On Screen Elements check - Courtesy of OnScreen.JS */
 		var inScreen = new OnScreen();
 
-		inScreen.on('enter', '.ml-portfolio-thumb', (element, event) => {
-			TweenMax.staggerTo(".ml-portfolio-thumb", 0.40, {opacity:1}, 0.4);
+		inScreen.on('enter', '.ml-projects-thumb', (element, event) => {
+			TweenMax.staggerTo(".ml-projects-thumb", 0.40, {opacity:1}, 0.4);
 		});
 
 		inScreen.on('enter', '.ml-skills-on-screen', (element, event) => {
@@ -193,13 +212,6 @@ $(document).ready(function() {
 		inScreen.on('enter', '.ml-social-icon', (element, event) => {
 			TweenMax.staggerTo(".ml-social-icon", 0.40, {scale:1,ease:Back.easeOut}, 0.2);
 		});
-
-
-	/* DESKTOP
-	 ************/
-
-	/* MOBILE
-	 ************/
 
 	//Mobile menu to sticky position on scroll event
 	var scrollContainer = $("#ml-wrapper");
@@ -243,7 +255,7 @@ $(document).ready(function() {
 	function hideFixedScroll(){
 
 		scrollMenu = userWindow.scrollTop();
-		// Check browser width to verify which menu that should be handled.
+		// Check browser width to verify which menu that should be handled. Depending on if user is on mobile or desktop
 		if (window.innerWidth <= 1024) {
 			if (scrollMenu > userPos && !scrollUp){
 				mobileNav.stop().slideUp();

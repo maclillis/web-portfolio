@@ -126,6 +126,7 @@ ul {
 
     p.ml-ingress {
     	font-style: italic;
+			padding: 5% 0;
     }
 
     hr.ml-grey-divider {
@@ -377,7 +378,7 @@ ul {
 
     main#ml-main p {
     	font-family: "RobotoLight", Helvetica, Arial, sans-serif;
-    	font-size: 0.9em;
+    	font-size: 0.73em;
     }
 
     main .ml-page-title {
@@ -402,7 +403,7 @@ ul {
 
     /*Portfolio-section */
 
-    figure.ml-portfolio-expandable h5 {
+    figure.ml-projects-expandable h5 {
     	font-family: "OpenSansSemiBold";
     	font-size: 1.2em;
     	color: #6d6d6d;
@@ -410,7 +411,7 @@ ul {
     	padding: 5% 0 3% 0;
     }
 
-    figure.ml-portfolio-expandable h4 {
+    figure.ml-projects-expandable h4 {
         font-size: 0.6em;
         display: inline-block;
         text-align: left;
@@ -421,15 +422,15 @@ ul {
     	color: #5d5d5d;
     }
 
-    i.ml-portfolio-collapse-icon {
+    i.ml-projects-collapse-icon {
     	width: 64%;
     	text-align: left;
     	right: 0;
     }
 
-    div.ml-portfolio-collapse-tab {display: inline-block;text-align: center;width: 100%;}
+    div.ml-projects-collapse-tab {display: inline-block;text-align: center;width: 100%;}
 
-    figure.ml-portfolio-expandable {
+    figure.ml-projects-expandable {
     	max-width: 100%;
       overflow: hidden;
     	padding: 0;
@@ -438,7 +439,7 @@ ul {
     	box-shadow: 1%;
     }
 
-    img.ml-portfolio-thumb {
+    img.ml-projects-thumb {
     	width: 100%;
     	margin: 0;
       padding: 2% 0 2% 0;
@@ -446,7 +447,7 @@ ul {
     	opacity: 0;
     }
 
-    iframe#ml-web-portfolio-iframe-01, iframe#ml-web-portfolio-iframe-02, img#ml-web-portfolio-iframe-03 {
+    iframe#ml-web-project-iframe-01, iframe#ml-web-project-iframe-02, img#ml-web-project-iframe-03 {
     	display:none;
     	opacity:0;
     	width: 100%;
@@ -455,7 +456,7 @@ ul {
     	margin: 0;
     }
 
-    div#ml-web-portfolio-iframe-04 {
+    div#ml-web-project-iframe-04 {
     	display: none;
     	text-align: center;
     	opacity:0;
@@ -464,7 +465,7 @@ ul {
 
     button.ml-github-cta {
     	background-color: #525252;
-    	margin: 8% 0 8% 0;
+    	margin: 0 0 8% 0;
     }
 
     .ml-github-cta:active {
@@ -486,11 +487,17 @@ ul {
     	vertical-align: bottom;
     }
 
+		iframe#ml-vimeo-video {
+			display:block;
+			width:94vw;
+			height:52vw;
+		}
+
     /* About-section */
 
     button.ml-linkedin-cta {
     	background-color: #6abae2;
-    	margin: 8% 0 8% 0;
+    	margin: 8% 0 6% 0;
     }
 
     .ml-linkedin-cta:active {
@@ -962,9 +969,9 @@ ul {
 
     /*Portfolio-section */
 
-    article#ml-portfolio h4 {padding: 4% 0 4%;}
+    article#ml-projects h4 {padding: 4% 0 4%;}
 
-    figure.ml-portfolio-expandable h5 {
+    figure.ml-projects-expandable h5 {
     	font-family: "OpenSansSemiBold";
     	font-size: 1.2em;
     	color: #6d6d6d;
@@ -972,7 +979,7 @@ ul {
     	padding: 5% 0 3% 0;
     }
 
-    figure.ml-portfolio-expandable h4 {
+    figure.ml-projects-expandable h4 {
         font-size: 0.8em;
         display: inline-block;
         text-align: left;
@@ -983,15 +990,15 @@ ul {
     	color: #5d5d5d;
     }
 
-    i.ml-portfolio-collapse-icon {
+    i.ml-projects-collapse-icon {
     	width: 64%;
     	text-align: left;
     	right: 0;
     }
 
-    div.ml-portfolio-collapse-tab {display: inline-block;text-align: center;width: 100%;}
+    div.ml-projects-collapse-tab {display: inline-block;text-align: center;width: 100%;}
 
-    figure.ml-portfolio-expandable {
+    figure.ml-projects-expandable {
     	max-width: 100%;
       overflow: hidden;
     	padding: 0;
@@ -1000,7 +1007,7 @@ ul {
     	box-shadow: 1%;
     }
 
-    img.ml-portfolio-thumb {
+    img.ml-projects-thumb {
     	width: 49%;
     	margin: 0;
     	padding: 2% 0 2% 0;
@@ -1008,7 +1015,7 @@ ul {
     	opacity: 0;
     }
 
-    iframe#ml-web-portfolio-iframe-01, iframe#ml-web-portfolio-iframe-02, img#ml-web-portfolio-iframe-03 {
+    iframe#ml-web-project-iframe-01, iframe#ml-web-project-iframe-02, img#ml-web-project-iframe-03 {
     	display:none;
     	opacity:0;
     	width: 50%;
@@ -1019,7 +1026,7 @@ ul {
     	left: 25%;
     }
 
-    div#ml-web-portfolio-iframe-04 {
+    div#ml-web-project-iframe-04 {
     	display: none;
     	text-align: center;
     	opacity:0;
@@ -1052,6 +1059,12 @@ ul {
     	font-size: 1.5em;
     	vertical-align: bottom;
     }
+
+		iframe#ml-vimeo-video {
+			display:block;
+			width:94vw;
+			height:52vw;
+		}
 
     /* About-section */
 
@@ -1202,16 +1215,12 @@ ul {
       color: #1a1a1a;
     }
 
-    h1, h2, h3, h4, h5 {
-
-    }
-
-    h1 {}
-
-    h2 {}
+    h2 {
+    letter-spacing: 2px;
+}
 
     h3 {
-      padding: 3% 0 5%;
+      padding: 3% 0 3%;
       letter-spacing: 0.1em;
       color: #737373;
       font-size: 1.1em;
@@ -1338,7 +1347,7 @@ ul {
     	width: 63%;
     	height: 23%;
     	position: absolute;
-    	top: 204px;
+    	top: 219px;
     	left: 188px;
     	pointer-events: none;
     }
@@ -1439,7 +1448,7 @@ ul {
       text-align: center;
       margin: 0 auto;
       left: 10%;
-      font-size: 1.04em;
+      font-size: 1.14em;
     }
 
     section#ml-content {
@@ -1506,7 +1515,8 @@ ul {
     	border-top: 1px #f5f5f5;
     	border-left: 0;
     	border-right: 0;
-    	width: 100%;
+    	width: 84%;
+    	margin: 0 auto;
     }
 
     hr#ml-divider-01, hr#ml-divider-02, hr#ml-divider-04, hr#ml-divider-05 {
@@ -1515,18 +1525,18 @@ ul {
 
     /*Portfolio-section */
 
-    article#ml-portfolio h4 {padding: 4% 0 4%;}
+    article#ml-projects h4 {padding: 4% 0 4%;}
 
-    figure.ml-portfolio-expandable h5 {
+    figure.ml-projects-expandable h5 {
     	font-family: "OpenSansSemiBold";
     	font-size: 1.4em;
     	color: #6d6d6d;
     	text-transform: uppercase;
-    	padding: 5% 0 3% 6%;
+    	padding: 1% 0 3% 8.5%;
     	text-align: left;
     }
 
-    figure.ml-portfolio-expandable h4 {
+    figure.ml-projects-expandable h4 {
         font-size: 0.8em;
         display: inline-block;
         text-align: left;
@@ -1537,15 +1547,15 @@ ul {
     	color: #5d5d5d;
     }
 
-    i.ml-portfolio-collapse-icon {
+    i.ml-projects-collapse-icon {
     	width: 64%;
     	text-align: left;
     	right: 0;
     }
 
-    div.ml-portfolio-collapse-tab {display: inline-block;text-align: center;width: 100%;}
+    div.ml-projects-collapse-tab {display: inline-block;text-align: center;width: 24%;padding: 0.8% 1%;border: 1px solid #f1f1f1;border-radius: 6px;float: right;}
 
-    figure.ml-portfolio-expandable {
+    figure.ml-projects-expandable {
     	max-width: 100%;
       overflow: hidden;
     	padding: 0;
@@ -1554,7 +1564,7 @@ ul {
     	box-shadow: 1%;
     }
 
-    img.ml-portfolio-thumb {
+    img.ml-projects-thumb {
     	width: 32%;
     	margin: 0;
     	padding: 2% 0 2% 0;
@@ -1562,23 +1572,34 @@ ul {
     	opacity: 0;
     }
 
-    iframe#ml-web-portfolio-iframe-01, iframe#ml-web-portfolio-iframe-02, img#ml-web-portfolio-iframe-03 {
+    iframe#ml-web-project-iframe-01, iframe#ml-web-project-iframe-02, img#ml-web-project-iframe-03 {
     	display:none;
     	opacity:0;
     	width: 414px;
     	height: 414px;
-    	padding: 0;
-    	margin: 0;
+    	padding: 3% 0 2%;
+    	margin: 0 auto;
     	position: relative;
-    	left: 25%;
+    	left: 0;
     }
 
-    div#ml-web-portfolio-iframe-04 {
+    div#ml-web-project-iframe-04 {
     	display: none;
     	text-align: center;
     	opacity:0;
     	width: 100%;
     }
+
+		.ml-projects-cta-wrapper {
+			width: 83%;
+			margin: 0 auto;
+			padding: 3% 0;
+		}
+
+		.ml-projects-cta-wrapper .ml-github-cta {
+			width: 24%;
+			padding: 1%;
+		}
 
     button.ml-github-cta {
     	background-color: #525252;
@@ -1607,6 +1628,19 @@ ul {
     	font-size: 1.5em;
     	vertical-align: bottom;
     }
+
+		iframe#ml-vimeo-video {
+			width: 853px;
+			height: 480px;
+			display:block;
+			margin: 0 auto;
+			padding-top: 4%;
+		}
+
+		figure.ml-projects-expandable hr.ml-divider {
+			margin: 0 auto;
+			padding: 1% 0  1%;
+		}
 
     /* About-section */
 
@@ -1722,7 +1756,7 @@ ul {
     	float: right;
     }
 
-    div#ml-about-cta-wrapper {
+    div.ml-about-cta-wrapper {
       width: 36%;
       height: auto;
       margin: 0 auto;
@@ -1734,7 +1768,7 @@ ul {
     footer#ml-footer {
       max-width: 100%;
       height: 7%;
-      /* padding: 5% 0 0; */
+      padding: 0;
       margin-top: 6%;
       margin-bottom: 3%;
     }
