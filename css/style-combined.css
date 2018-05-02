@@ -215,7 +215,7 @@ ul {
 
     /* Header */
 
-    div#ml-mobile-navigation-content-wrapper {
+		div#ml-mobile-navigation-content-wrapper {
       display: block;
     }
 
@@ -234,15 +234,12 @@ ul {
     }
 
     section#ml-profile-wrapper {
-      max-width: 100%;
-      height: 42%;
-      padding: 16% 0 0;
-    	position: relative;
+      max-width: 768px;
+      height: auto;
+      padding: 84px 0 0;
+      position: relative;
+      margin: 0 auto;
     }
-
-		section#ml-desktop-mini-profile-wrapper {
-			display: none;
-		}
 
     div#ml-profile {
       width: 250px;
@@ -260,27 +257,31 @@ ul {
     }
 
     img#ml-profile-github-badge {
-    	width: 13%;
+    	width: 47px;
     	position: absolute;
-    	top: 22%;
-    	left: 23%;
+    	top: 112px;
+    	left: 262px;
     	transform: scale(0);
     	-webkit-transform: scale(0);
     	-moz-transform: scale(0);
     }
 
     img#ml-profile-linkedin-badge {
-    	width: 13%;
+    	width: 47px;
     	position: absolute;
-    	top: 40%;
-    	left: 15%;
+    	top: 165px;
+    	left: 240px;
     	transform: scale(0);
     	-webkit-transform: scale(0);
     	-moz-transform: scale(0);
     }
 
     div#ml-profile-type-wrapper {
-    	width: 63%;height: 23%;position: absolute;top: 50%;left: 17%;
+    	width: 122px;
+    	height: 66px;
+    	position: absolute;
+    	top: 184px;
+    	left: 321px;
     }
 
     span.ml-typing-txt {
@@ -432,7 +433,7 @@ ul {
     	right: 0;
     }
 
-    div.ml-projects-collapse-tab {display: inline-block;text-align: center;width: 100%;}
+    div.ml-projects-collapse-tab {display: none;text-align: center;width: 100%;}
 
     figure.ml-projects-expandable {
     	max-width: 100%;
@@ -446,7 +447,7 @@ ul {
     img.ml-projects-thumb {
     	width: 100%;
     	margin: 0;
-      padding: 2% 0 2% 0;
+    	padding: 4% 0 2% 0;
     	display: block;
     	opacity: 0;
     }
@@ -456,7 +457,7 @@ ul {
     	opacity:0;
     	width: 100%;
     	height: 94vw;
-    	padding: 0;
+    	padding: 2% 0;
     	margin: 0;
     }
 
@@ -469,7 +470,7 @@ ul {
 
     button.ml-github-cta {
     	background-color: #525252;
-    	margin: 0 0 8% 0;
+    	margin: 0 0 5% 0;
     }
 
     .ml-github-cta:active {
@@ -1546,14 +1547,14 @@ ul {
 
     /*Portfolio-section */
 
-    article#ml-projects h4 {padding: 4% 0 4%;}
+    article#ml-projects h4 {padding: 2% 0 2%;}
 
     figure.ml-projects-expandable h5 {
     	font-family: "OpenSansSemiBold";
     	font-size: 1.4em;
     	color: #6d6d6d;
     	text-transform: uppercase;
-    	padding: 1% 0 3% 8.5%;
+    	padding: 1% 0 1.5% 8.5%;
     	text-align: left;
     }
 
@@ -1574,7 +1575,7 @@ ul {
     	right: 0;
     }
 
-    div.ml-projects-collapse-tab {display: inline-block;text-align: center;width: 24%;padding: 0.8% 1%;border: 1px solid #f1f1f1;border-radius: 6px;float: right;}
+    div.ml-projects-collapse-tab {display: inline-block;text-align: center;width: 9%;padding: 1% 1%;border: 1px solid #f1f1f1;border-radius: 6px;float: right;position:  relative;right: 0;}
 
     figure.ml-projects-expandable {
     	max-width: 100%;
@@ -1598,10 +1599,11 @@ ul {
     	opacity:0;
     	width: 414px;
     	height: 414px;
-    	padding: 3% 0 2%;
-    	margin: 0 auto;
+    	padding: 5% 0 2%;
     	position: relative;
-    	left: 0;
+    	/* left: 0; */
+    	margin-left: 0;
+    	margin-right: 0;
     }
 
     div#ml-web-project-iframe-04 {
@@ -1612,13 +1614,13 @@ ul {
     }
 
 		.ml-projects-cta-wrapper {
-			width: 83%;
+			width: 865px;
 			margin: 0 auto;
 			padding: 3% 0;
 		}
 
 		.ml-projects-cta-wrapper .ml-github-cta {
-			width: 24%;
+			width: 35%;
 			padding: 1%;
 		}
 
@@ -1629,6 +1631,7 @@ ul {
     	display: inline-block;
     	left: 0;
     	border-radius: 6px;
+			float: none;
     }
 
     .ml-github-cta:active {
@@ -1638,10 +1641,10 @@ ul {
 
     button.ml-github-cta h4 {
         font-size: 1.2em;
-        letter-spacing: 0.35em;
+        letter-spacing: 0.28em;
         width: 100%;
         text-align: center;
-        padding: 11.5px 0;
+        padding: 12px 0;
     }
 
     button.ml-github-cta #ml-github-icon {
@@ -1779,7 +1782,7 @@ ul {
     }
 
     div.ml-about-cta-wrapper {
-      width: 40%;
+      width: 30%;
       height: auto;
       margin: 0 auto;
       padding: 5%;
