@@ -248,7 +248,7 @@ $(document).ready(function() {
 			desktopNav.removeClass("ml-desktop-menu-scrolled");
 			TweenMax.set("#ml-mini-profile-wrapper", {display:"none"});
 			TweenMax.set(".ml-desktop-mini-social-icon", {display:"none"});
-			TweenMax.set("#ml-desktop-navigation-content", {width:415});
+			TweenMax.set("#ml-desktop-navigation-content", {width:460});
     }
   }
 
