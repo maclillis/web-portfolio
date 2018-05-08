@@ -155,6 +155,7 @@ $(document).ready(function() {
 			chars06 = mySplitText06.chars;
 
 			mlTypingTxtAnimTlWS_DYN_INS_RAND
+						.set(".ml-typing-txt", {display:"block"})
 						.staggerFrom(chars,0.01, {opacity:0, ease:Power1.easeIn}, 0.08, "+=0.1")
 						.fromTo(".charTypeTxt5", 0.4, {opacity:0}, {opacity:1, repeat:3, yoyo:true, ease: Linear.easeNone})
 						.staggerTo(chars,0.01, {opacity:0, ease:Power1.easeIn}, -0.08, "+=0.1")

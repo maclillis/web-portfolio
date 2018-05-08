@@ -112,7 +112,7 @@ ul {
 /* PHONES */
 
 @media only screen
-  and (min-width: 414px)
+  and (min-width: 320px)
   /*and (-webkit-min-device-pixel-ratio: 2)*/ {
 
     /* Actual CSS-Styles */
@@ -148,6 +148,7 @@ ul {
       font-size: 2.4em;
       font-family: "AndadaRegular", Georgia, serif;
       color: #404040;
+      line-height: 52px;
       }
 
     h3 {
@@ -173,7 +174,7 @@ ul {
     h5 {
         font-family: "AndadaRegular", Georgia, serif;
         font-weight: lighter;
-        font-size: 1.04em;
+        font-size: 0.91em;
         text-align: center;
         color: darkgrey;
     }
@@ -237,9 +238,9 @@ ul {
     }
 
     section#ml-profile-wrapper {
-      max-width: 768px;
+      max-width: 320px;
       height: auto;
-      padding: 84px 0 0;
+      padding: 83px 0 37px;
       position: relative;
       margin: 0 auto;
     }
@@ -252,7 +253,6 @@ ul {
       display: table;
       border-color: #e8e8e8;
       margin: 0 auto;
-      z-index: -2;
       position: relative;
       transform: scale(0);
       -webkit-transform: scale(0);
@@ -263,7 +263,7 @@ ul {
     	width: 47px;
     	position: absolute;
     	top: 112px;
-    	left: 262px;
+    	left: 36px;
     	transform: scale(0);
     	-webkit-transform: scale(0);
     	-moz-transform: scale(0);
@@ -273,18 +273,18 @@ ul {
     	width: 47px;
     	position: absolute;
     	top: 165px;
-    	left: 240px;
+    	left: 20px;
     	transform: scale(0);
     	-webkit-transform: scale(0);
     	-moz-transform: scale(0);
     }
 
     div#ml-profile-type-wrapper {
-    	width: 122px;
+    	width: 140px;
     	height: 66px;
     	position: absolute;
-    	top: 184px;
-    	left: 321px;
+    	top: 175px;
+    	left: 93px;
     }
 
     span.ml-typing-txt {
@@ -293,6 +293,7 @@ ul {
     	text-align: center;
     	width: 100%;
     	color: #aaaaaa;
+			display: none;
     }
 
     div#ml-mini-profile {
@@ -698,6 +699,8 @@ ul {
         padding: 0% 0 3%;
         font-size: 0.95em;
     }
+
+		h5 {font-size: 1.12em;}
 
     .ml-content-h4 {
         padding: 6% 0 6%;
@@ -1274,6 +1277,8 @@ ul {
         font-size: 0.9em;
     }
 
+		h5 {font-size: 0.98em;}
+
     .ml-content-h4 {
         padding: 6% 0 6%;
         font-size: 1em;
@@ -1700,11 +1705,9 @@ ul {
     }
 
 		iframe#ml-vimeo-video {
-			width: 853px;
-			height: 480px;
+			width: 950px;
 			display:block;
 			margin: 0 auto;
-			padding-top: 4%;
 		}
 
 		figure.ml-projects-expandable hr.ml-divider {
@@ -1741,9 +1744,11 @@ ul {
     	vertical-align: bottom;
     }
 
-		div.ml-about-cta-wrapper button.ml-github-cta {}
+		div.ml-about-cta-wrapper button.ml-github-cta h4 {
+			padding: 10px 0 !Important;
+		}
 
-		div.ml-about-cta-wrapper button.ml-github-cta h4 {padding: 10px 0 !Important;}
+		article#ml-about .ml-content-h4 {padding: 40px 0;}
 
     /* Tools Section */
 
@@ -1830,7 +1835,7 @@ ul {
       width: 30%;
       height: auto;
       margin: 0 auto;
-      padding: 5%;
+      padding: 50px;
     }
 
     /* Footer */
@@ -1840,7 +1845,6 @@ ul {
       height: 7%;
       padding: 0;
       margin-top: 6%;
-      margin-bottom: 3%;
     }
 
     footer .ml-footer-text {
