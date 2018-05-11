@@ -50,84 +50,32 @@ $(document).ready(function() {
 
 		/* END of Same-page scrolling snippet */
 
-		/* OnClick-handlers for the Portfolio-section */
+		/* Click-handlers for the Portfolio-section */
 
-		//Open Portfolio-tabs
-		$("#ml-web-project-thumb-01").click(function(){
-			$("#ml-web-project-01").slideDown("slow");
-			TweenMax.to("#ml-web-project-iframe-01", 0.5, {display:"block", opacity:1, delay:0.5});
-			TweenMax.to("#ml-web-project-thumb-01", 0.5, {opacity:0, display:"none"});
+   // Open tabs
+		$(".ml-projects-thumb").click(function(){
+
+			var elemIdNr = (($(this).attr("id").substr(-2)));
+
+			$("#ml-web-project-" + elemIdNr).slideDown("slow");
+			TweenMax.to("#ml-web-project-iframe-" + elemIdNr, 0.5, {display:"block", opacity:1, delay:0.5});
+			TweenMax.to("#ml-web-project-thumb-"  + elemIdNr, 0.5, {opacity:0, display:"none"});
 			mobileNav.slideUp();
 			closeMobileMenu();
 
-			$(window).scrollTo("#ml-web-project-thumb-01", 1000);
+			$(window).scrollTo("#ml-web-project-thumb-" + elemIdNr, 1000);
 		})
 
-		$("#ml-web-project-thumb-02").click(function(){
-			$("#ml-web-project-02").slideDown("slow");
-			TweenMax.to("#ml-web-project-iframe-02", 0.5, {display:"block", opacity:1, delay:0.5});
-			TweenMax.to("#ml-web-project-thumb-02", 0.5, {opacity:0, display:"none"});
-			mobileNav.slideUp();
-			closeMobileMenu();
+   // Close tabs
+		$(".ml-projects-collapse-tab").click(function(){
 
-			$(window).scrollTo("#ml-web-project-thumb-02", 1000);
-		})
+			var elemIdNr = (($(this).attr("id").substr(-2)));
 
-		$("#ml-web-project-thumb-03").click(function(){
-			$("#ml-web-project-03").slideDown("slow");
-			TweenMax.to("#ml-web-project-iframe-03", 0.5, {display:"block", opacity:1, delay:0.5});
-			TweenMax.to("#ml-web-project-thumb-03", 0.5, {opacity:0, display:"none"});
-			mobileNav.slideUp();
-			closeMobileMenu();
-
-			$(window).scrollTo("#ml-web-project-thumb-02", 1000);
-		})
-
-		$("#ml-web-project-thumb-04").click(function(){
-			$("#ml-web-project-04").slideDown("slow");
-			TweenMax.to("#ml-web-project-iframe-04", 0.5, {display:"inline-block", opacity:1, delay:0.5});
-			TweenMax.to("#ml-web-project-thumb-04", 0.5, {opacity:0, display:"none"});
-			mobileNav.slideUp();
-			closeMobileMenu();
-
-			$(window).scrollTo("#ml-web-project-thumb-04", 1000);
-		})
-
-		//Close Portfolio-tabs
-		$("#ml-web-project-collapse-tab-01").click(function(){
-			$("#ml-web-project-01").slideUp("slow");
-			TweenMax.to("#ml-web-project-iframe-01", 0.5, {display:"none", opacity:0});
-			TweenMax.to("#ml-web-project-thumb-01", 0.7, {display:"inline-block", opacity:1});
+			$("#ml-web-project-" + elemIdNr).slideUp("slow");
+			TweenMax.to("#ml-web-project-iframe-"  + elemIdNr, 0.5, {display:"none", opacity:0});
+			TweenMax.to("#ml-web-project-thumb-"  + elemIdNr, 0.7, {display:"inline-block", opacity:1});
 
 			$(window).scrollTo("#ml-projects", 1000);
-
-		})
-
-		$("#ml-web-project-collapse-tab-02").click(function(){
-			$("#ml-web-project-02").slideUp("slow");
-			TweenMax.to("#ml-web-project-iframe-02", 0.5, {display:"none", opacity:0});
-			TweenMax.to("#ml-web-project-thumb-02", 0.7, {display:"inline-block", opacity:1});
-
-			$(window).scrollTo("#ml-web-project-thumb-01", 1000);
-
-		})
-
-		$("#ml-web-project-collapse-tab-03").click(function(){
-			$("#ml-web-project-03").slideUp("slow");
-			TweenMax.to("#ml-web-project-iframe-03", 0.5, {display:"none", opacity:0});
-			TweenMax.to("#ml-web-project-thumb-03", 0.7, {display:"inline-block", opacity:1});
-
-			$(window).scrollTo("#ml-web-project-thumb-01", 1000);
-
-		})
-
-		$("#ml-web-project-collapse-tab-04").click(function(){
-			$("#ml-web-project-04").slideUp("slow");
-			TweenMax.to("#ml-web-project-iframe-04", 0.5, {display:"none", opacity:0});
-			TweenMax.to("#ml-web-project-thumb-04", 0.7, {display:"inline-block", opacity:1});
-
-			$(window).scrollTo("#ml-web-project-thumb-02", 1000);
-
 		})
 
 		/* Animations */
