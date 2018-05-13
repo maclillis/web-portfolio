@@ -127,10 +127,12 @@ $(document).ready(function() {
 						.to("#ml-profile-linkedin-badge", 0.3, {scale:0})
 						.to("#ml-profile-github-badge", 0.3, {scale:0}, "-=0.25")
 						.to("#ml-profile", 1, {rotationY:180}, "+=0.20")
-						.to("#ml-profile", 1, {borderWidth:2, borderStyle:"solid", borderColor:"#ececec", backgroundColor:"transparent"}, "-=0.9")
+						.to("#ml-profile", 1, {borderWidth:2, borderStyle:"solid", borderColor:"#ececec", backgroundColor:"transparent", borderRadius:"50%"}, "-=0.9")
+						.to("#ml-profile-picture", 0.5, {opacity:0}, "-=1.10")
 						.add(mlTypingTxtAnimTlWS_DYN_INS_RAND.play())
 						.to("#ml-profile", 1, {rotationY:0}, "+=0.20")
 						.to("#ml-profile", 1, {borderWidth:0, backgroundColor:"#e8e8e8"}, "-=0.9")
+						.to("#ml-profile-picture", 0.5, {opacity:1}, "-=0.70")
 						.to("#ml-profile-linkedin-badge", 0.3, {scale:1})
 						.to("#ml-profile-github-badge", 0.3, {scale:1}, "-=0.25");
 
@@ -183,22 +185,40 @@ $(document).ready(function() {
 		}
 	}
 
+	var mlppimg01scrolled = false;
+	var mlppimg02scrolled = false;
+
   function scrollToFixed() {
 
-    if (userWindow.scrollTop() > 150) {
+    if (userWindow.scrollTop() > 150 || userWindow.scrollTop() <= 1 ) {
       mobileMenu.addClass("ml-menu-scrolled");
 			desktopNav.addClass("ml-desktop-menu-scrolled");
 			TweenMax.set("#ml-mini-profile-wrapper", {display:"block"});
 			TweenMax.set(".ml-desktop-mini-social-icon", {display:"block"});
 			TweenMax.set("#ml-desktop-navigation-content", {width:557});
 
-    } else if (userWindow.scrollTop() > 0) {
+			//Replace profile picture of me looking down while scrolling
+			if (!mlppimg01scrolled){
+				TweenMax.set("#ml-profile-picture", {backgroundPosition:"100% 100%"});
+				mlppimg01scrolled = true;
+				mlppimg02scrolled = false;
+			}
+
+    } else if (userWindow.scrollTop() > 0 || userWindow.scrollTop() == 0 ) {
       mobileMenu.removeClass("ml-menu-scrolled");
 			desktopNav.removeClass("ml-desktop-menu-scrolled");
 			TweenMax.set("#ml-mini-profile-wrapper", {display:"none"});
 			TweenMax.set(".ml-desktop-mini-social-icon", {display:"none"});
 			TweenMax.set("#ml-desktop-navigation-content", {width:460});
+
+			//Replace profile picture of me looking back at you while scrolling
+			if (!mlppimg02scrolled){
+			TweenMax.set("#ml-profile-picture", {backgroundPosition:"0% 100%"});
+				mlppimg02scrolled = true;
+				mlppimg01scrolled = false;
+			}
     }
+
   }
 
 	function hideFixedScroll(){

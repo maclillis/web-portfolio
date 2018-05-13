@@ -83,7 +83,9 @@
         </header>
 
           <section id="ml-profile-wrapper">
-            <div id="ml-profile"></div>
+            <div id="ml-profile">
+              <div id="ml-profile-picture"></div>
+            </div>
 
             <a href="https://github.com/maclillis" target="_blank">
               <img src="img/github_icon.png" id="ml-profile-github-badge" />
@@ -121,7 +123,7 @@
               <h3>Projects</h3>
 
               <h4>Web</h4>
-              <img src="img/catch_c_thumb.jpg" class="ml-projects-thumb" id="ml-web-project-thumb-01" />
+              <img src="img/ml_port_thumb.jpg" class="ml-projects-thumb" id="ml-web-project-thumb-01" />
 
                 <figure class="ml-projects-expandable" id="ml-web-project-01">
 
@@ -134,7 +136,34 @@
                     </div>
                   </div>
 
-                  <iframe src="apps/catchcandy/catchcandy.html" id="ml-web-project-iframe-01" scrolling="no" frameborder="no" marginwidth="0" mrginheight="0"></iframe>
+                  <h5>My Portfolio</h5>
+                  <p><span class="ml-bolder-text">Tools used:</span> HTML5, CSS3 with {LESS}, jQuery, GreensockJS, onScreen()</p>
+                  <p id="ml-projects-expandable-content">Done in pure HTML5 with a mobile first philosophy. It includes help from an external JS-library called onScreen(); to measure
+                    in screen movement. It also has some nice GreensockJS-animations to it to make it more fluent. This was also the first time I used a CSS pre processor like LESS and
+                    was very pleased with the result. Feel free to check it out back stage on Github below.
+                  </p>
+
+                    <a href="https://github.com/maclillis" target="_blank">
+                      <button class="ml-github-cta"><h4><i class="fa fa-github-square" aria-hidden="true" id="ml-github-icon"></i>View it on Github</h4></button>
+                    </a>
+
+                  <hr class="ml-divider" />
+                </figure>
+
+              <img src="img/catch_c_thumb.jpg" class="ml-projects-thumb" id="ml-web-project-thumb-02" />
+
+                <figure class="ml-projects-expandable" id="ml-web-project-02">
+
+                  <hr class="ml-divider" />
+
+                  <div class="ml-projects-cta-wrapper">
+                    <div class="ml-projects-collapse-tab" id="ml-web-project-collapse-tab-02">
+                      <i class="fa fa-times ml-projects-times-icon" aria-hidden="true"></i>
+                      <h4>Close</h4>
+                    </div>
+                  </div>
+
+                  <iframe src="apps/catchcandy/catchcandy.html" id="ml-web-project-iframe-02" scrolling="no" frameborder="no" marginwidth="0" mrginheight="0"></iframe>
                   <h5>Catch the Candy</h5>
                   <p><span class="ml-bolder-text">Tools used:</span> HTML5, CSS3, JavaScript & GreensockJS</p>
                   <p id="ml-projects-expandable-content">Made as a test demonstrate the collision abilities of Draggable in GreensockJS, this game got
@@ -150,25 +179,26 @@
                   <hr class="ml-divider" />
                 </figure>
 
-              <img src="img/simon_s_thumb.jpg" class="ml-projects-thumb" id="ml-web-project-thumb-02" />
-                <figure class="ml-projects-expandable" id="ml-web-project-02">
+              <img src="img/simon_s_thumb.jpg" class="ml-projects-thumb" id="ml-web-project-thumb-03" />
+                <figure class="ml-projects-expandable" id="ml-web-project-03">
 
                   <hr class="ml-divider" />
 
                   <div class="ml-projects-cta-wrapper">
-                    <div class="ml-projects-collapse-tab" id="ml-web-project-collapse-tab-02">
+                    <div class="ml-projects-collapse-tab" id="ml-web-project-collapse-tab-03">
                       <i class="fa fa-times ml-projects-times-icon" aria-hidden="true"></i>
                       <h4>Close</h4>
                     </div>
                   </div>
 
-                  <iframe src="apps/simonsays/simongame.html" id="ml-web-project-iframe-02" scrolling="no" frameborder="no" marginwidth="0" mrginheight="0"></iframe>
+                  <iframe src="apps/simonsays/simongame.html" id="ml-web-project-iframe-03" scrolling="no" frameborder="no" marginwidth="0" mrginheight="0"></iframe>
 
                   <h5>Simon Says...</h5>
                   <p><span class="ml-bolder-text">Tools used:</span> HTML5, CSS3, JavaScript & GreensockJS</p>
-                  <p>Another interesting project that was intended as a mockup for an actual mobile ad. The inspiration came from one of Google's Doodles where
-                    you were suppose to draw different shapes to accomplish certain tasks. I found this really cool external JS library that was called dollar.js,
-                    in which did exactly what I was looking for. My former boss was given as the title character just because of his name and the premise.
+                  <p><span class="ml-bolder-text">Does not currently work on desktop. Try your phone instead!</span> Another interesting project that was intended as
+                    a mockup for an actual mobile ad. The inspiration came from one of Google's Doodles where you were suppose to draw different shapes to accomplish
+                    certain tasks. I found this really cool external JS library that was called dollar.js in conjunction with HTML canvas. My former boss
+                    was given as the title character just because of his name and the premise. Do as he says and you'll be fine.
                   </p>
 
                     <a href="https://github.com/maclillis" target="_blank">
@@ -178,24 +208,86 @@
                   <hr class="ml-divider" />
                 </figure>
 
-              <img src="http://via.placeholder.com/414x207" class="ml-projects-thumb" id="ml-web-project-thumb-03" />
+              <img src="img/swipe_m_thumb.jpg" class="ml-projects-thumb" id="ml-web-project-thumb-04" />
 
-              <figure class="ml-projects-expandable" id="ml-web-project-03">
+              <figure class="ml-projects-expandable" id="ml-web-project-04">
 
                 <hr class="ml-divider" />
 
                 <div class="ml-projects-cta-wrapper">
-                  <div class="ml-projects-collapse-tab" id="ml-web-project-collapse-tab-03">
+                  <div class="ml-projects-collapse-tab" id="ml-web-project-collapse-tab-04">
                     <i class="fa fa-times ml-projects-times-icon" aria-hidden="true"></i>
                     <h4>Close</h4>
                   </div>
                 </div>
 
+                <iframe src="apps/swipemoney/moneyswipe.html" id="ml-web-project-iframe-04" scrolling="no" frameborder="no" marginwidth="0" mrginheight="0"></iframe>
+
                 <h5>Swipe the Money</h5>
                 <p><span class="ml-bolder-text">Tools used:</span> HTML5, CSS3, JavaScript & GreensockJS</p>
                 <p>Used as an actual live mobile ad campaign I did for a finish lottery company. The idea initially was to swipe as much money you can
                   in as short time as possible but this was changed upon request of the client. Once again, Draggable in combination with some JS-tricks and
-                  clever Greensock-animation helped me achieve what I wanted.
+                  clever Greensock-animation helped me achieve what I wanted. Just like money, it works best on a phone. That last thing did not make any sense. No.
+                </p>
+
+                  <a href="https://github.com/maclillis" target="_blank">
+                    <button class="ml-github-cta"><h4><i class="fa fa-github-square" aria-hidden="true" id="ml-github-icon"></i>View it on Github</h4></button>
+                  </a>
+
+                <hr class="ml-divider" />
+
+              </figure>
+
+              <img src="img/ass_c_thumb.jpg" class="ml-projects-thumb" id="ml-web-project-thumb-05" />
+
+              <figure class="ml-projects-expandable" id="ml-web-project-05">
+
+                <hr class="ml-divider" />
+
+                <div class="ml-projects-cta-wrapper">
+                  <div class="ml-projects-collapse-tab" id="ml-web-project-collapse-tab-05">
+                    <i class="fa fa-times ml-projects-times-icon" aria-hidden="true"></i>
+                    <h4>Close</h4>
+                  </div>
+                </div>
+
+                <iframe src="apps/ascreed/asscreed_game.html" id="ml-web-project-iframe-05" scrolling="no" frameborder="no" marginwidth="0" mrginheight="0"></iframe>
+
+                <h5>Assassin's Creed Origins Minigame</h5>
+                <p><span class="ml-bolder-text">Tools used:</span> HTML5, CSS3, JavaScript & GreensockJS</p>
+                <p>Produced in collaboration with a former colleague, this was sold as a live ad campaign for Ubisoft in the Netherlands in participation of the
+                  launch of the video game "Assassin's Creed Origins" in 2017. The concept of it was to make a short duration game to get people engaged, from my
+                  point of view I saw it as an oppurtinity to make an ad that really doesn't look like an ad. Please, don't mind the Dutch language. It's aaalmost like Swedish.
+                </p>
+
+                  <a href="https://github.com/maclillis" target="_blank">
+                    <button class="ml-github-cta"><h4><i class="fa fa-github-square" aria-hidden="true" id="ml-github-icon"></i>View it on Github</h4></button>
+                  </a>
+
+                <hr class="ml-divider" />
+
+              </figure>
+
+              <img src="img/wadogs_thumb.jpg" class="ml-projects-thumb" id="ml-web-project-thumb-06" />
+
+              <figure class="ml-projects-expandable" id="ml-web-project-06">
+
+                <hr class="ml-divider" />
+
+                <div class="ml-projects-cta-wrapper">
+                  <div class="ml-projects-collapse-tab" id="ml-web-project-collapse-tab-06">
+                    <i class="fa fa-times ml-projects-times-icon" aria-hidden="true"></i>
+                    <h4>Close</h4>
+                  </div>
+                </div>
+
+                <!--<iframe src="apps/wadogs/wadogs.html" id="ml-web-project-iframe-05" scrolling="no" frameborder="no" marginwidth="0" mrginheight="0"></iframe>-->
+
+                <h5>Watch Dogs 2 Interactive Panorama-Ad</h5>
+                <p><span class="ml-bolder-text">Tools used:</span> HTML5, CSS3, JavaScript & GreensockJS</p>
+                <p>Another interactive ad-campaign made for Ubisoft. I came up with the concept which was pitched for Ubisoft in competedence with other
+                  creative agencies. My mockup won! It was made as a pure gyro solution and I added the swipe function later on. Makre sure to view it on a phone to see
+                  the gyro in action.
                 </p>
 
                   <a href="https://github.com/maclillis" target="_blank">
@@ -208,20 +300,20 @@
 
               <h4>Motion Graphics</h4>
 
-              <img src="img/arlanda_mgx_thumb.jpg" class="ml-projects-thumb" id="ml-web-project-thumb-04" />
+              <img src="img/arlanda_mgx_thumb.jpg" class="ml-projects-thumb" id="ml-web-project-thumb-07" />
 
-                <figure class="ml-projects-expandable" id="ml-web-project-04">
+                <figure class="ml-projects-expandable" id="ml-web-project-07">
 
                   <hr class="ml-divider" />
 
                   <div class="ml-projects-cta-wrapper">
-                    <div class="ml-projects-collapse-tab" id="ml-web-project-collapse-tab-04">
+                    <div class="ml-projects-collapse-tab" id="ml-web-project-collapse-tab-07">
                       <i class="fa fa-times ml-projects-times-icon" aria-hidden="true"></i>
                       <h4>Close</h4>
                     </div>
                   </div>
 
-                  <div id="ml-web-project-iframe-04">
+                  <div id="ml-web-project-iframe-07">
                     <iframe src="https://player.vimeo.com/video/88060606" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen  id="ml-vimeo-video"></iframe>
                   </div>
 
