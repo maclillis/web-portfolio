@@ -190,7 +190,7 @@ $(document).ready(function() {
 
   function scrollToFixed() {
 
-    if (userWindow.scrollTop() > 150 || userWindow.scrollTop() <= 1 ) {
+    if (userWindow.scrollTop() > 150 || userWindow.scrollTop() >= 70 ) {
       mobileMenu.addClass("ml-menu-scrolled");
 			desktopNav.addClass("ml-desktop-menu-scrolled");
 			TweenMax.set("#ml-mini-profile-wrapper", {display:"block"});
@@ -204,7 +204,7 @@ $(document).ready(function() {
 				mlppimg02scrolled = false;
 			}
 
-    } else if (userWindow.scrollTop() > 0 || userWindow.scrollTop() == 0 ) {
+    } else if (userWindow.scrollTop() > 0 || userWindow.scrollTop() == 70 ) {
       mobileMenu.removeClass("ml-menu-scrolled");
 			desktopNav.removeClass("ml-desktop-menu-scrolled");
 			TweenMax.set("#ml-mini-profile-wrapper", {display:"none"});
